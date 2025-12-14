@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const links = [
   { href: '/', label: 'Home' },
@@ -12,6 +13,13 @@ const links = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    if (href === '/games') return pathname === '/games' || pathname.startsWith('/games/');
+    return pathname === href;
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-black/20 bg-black/30 border-b border-white/5">
@@ -31,7 +39,12 @@ export default function Nav() {
             <li key={l.href}>
               <Link
                 href={l.href}
-                className="text-text-muted hover:text-text transition-colors"
+                aria-current={isActive(l.href) ? 'page' : undefined}
+                className={
+                  (isActive(l.href)
+                    ? 'text-text border-b border-accent/60 pb-0.5 '
+                    : 'text-text-muted ') + 'hover:text-text transition-colors'
+                }
               >
                 {l.label}
               </Link>
@@ -46,7 +59,12 @@ export default function Nav() {
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className="block py-1 text-text-muted hover:text-text"
+                  aria-current={isActive(l.href) ? 'page' : undefined}
+                  className={
+                    'block py-1 ' +
+                    (isActive(l.href) ? 'text-text border-b border-accent/60' : 'text-text-muted') +
+                    ' hover:text-text'
+                  }
                   onClick={() => setOpen(false)}
                 >
                   {l.label}

@@ -3,6 +3,11 @@ import { MotionHero } from '../components/MotionHero';
 import StorySection from '../components/StorySection';
 import GamesSection from '../components/GamesSection';
 import FounderSection from '../components/FounderSection';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Out Of Box Studio — Indie Games Beyond Imagination'
+};
 
 export default function HomePage() {
   return (

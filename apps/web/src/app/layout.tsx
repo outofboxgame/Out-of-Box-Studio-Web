@@ -5,13 +5,16 @@ import { Space_Grotesk } from 'next/font/google';
 import Nav from '../components/Nav';
 import BackgroundFX from '../components/BackgroundFX';
 import Footer from '../components/Footer';
+import PageTransition from '../components/PageTransition';
 
 export const metadata: Metadata = {
   title: 'Out Of Box Studio',
-  description: 'Crafting Games Beyond Imagination',
+  description:
+    'Indie games crafted with care. Small worlds, thoughtful design, long-term vision.',
   openGraph: {
     title: 'Out Of Box Studio',
-    description: 'Crafting Games Beyond Imagination',
+    description:
+      'Indie games crafted with care. Small worlds, thoughtful design, long-term vision.',
     type: 'website',
     url: 'https://outofbox.studio',
     images: []
@@ -19,7 +22,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Out Of Box Studio',
-    description: 'Crafting Games Beyond Imagination'
+    description:
+      'Indie games crafted with care. Small worlds, thoughtful design, long-term vision.'
   }
 };
 
@@ -31,11 +35,13 @@ const font = Space_Grotesk({
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={font.variable}>
-      <body className="min-h-screen bg-bg text-text antialiased">
+      <body className="min-h-screen flex flex-col bg-bg text-text antialiased">
         <BackgroundFX />
         <div className="noise-overlay" />
         <Nav />
-        {children}
+        <PageTransition>
+          <div className="flex-1">{children}</div>
+        </PageTransition>
         <Footer />
       </body>
     </html>

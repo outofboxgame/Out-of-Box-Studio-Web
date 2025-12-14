@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
 type GameCardProps = {
@@ -54,21 +53,12 @@ export default function GameCard({
         className
       )}
     >
-      <motion.article
-        initial={{ opacity: 0, y: 14 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
-        className="relative rounded-lg overflow-hidden border border-white/5 bg-black/30 shadow-[0_0_0_0_rgba(0,0,0,0)] transition-shadow"
-      >
+      <article className="relative rounded-lg overflow-hidden border border-white/5 bg-black/30 shadow-[0_0_0_0_rgba(0,0,0,0)] transition-shadow">
         {/* Cover placeholder */}
         <div className="relative h-40 sm:h-48">
-          <motion.div
-            className="absolute inset-0"
+          <div
+            className="absolute inset-0 transform transition-transform duration-300 group-hover:scale-105"
             style={{ background: gradient }}
-            initial={{ scale: 1 }}
-            whileHover={{ scale: 1.06 }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
           />
           {/* abstract shapes */}
           <div
@@ -87,7 +77,7 @@ export default function GameCard({
 
         {/* Hover accents */}
         <div className="pointer-events-none absolute inset-0 transition-all duration-300 group-hover:shadow-[0_0_24px_rgba(147,197,253,0.25)] group-hover:border-accent/40" />
-      </motion.article>
+      </article>
     </Link>
   );
 }

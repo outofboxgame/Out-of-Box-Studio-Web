@@ -1,5 +1,10 @@
 import Section from '../../components/Section';
 import GameCard from '../../components/GameCard';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Games — Out Of Box Studio'
+};
 
 export default function GamesPage() {
   return (
