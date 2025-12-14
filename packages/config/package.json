@@ -1,0 +1,18 @@
+{
+  "name": "@out-of-box-studio/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "exports": {
+    "./eslint/base": "./eslint/base.js",
+    "./eslint/next": "./eslint/next.js",
+    "./eslint/node": "./eslint/node.js",
+    "./tailwind-preset": "./tailwind/tailwind-preset.js",
+    "./tsconfig/base": "./tsconfig/base.json",
+    "./tsconfig/nextjs": "./tsconfig/nextjs.json",
+    "./tsconfig/node": "./tsconfig/node.json",
+    "./tsconfig/lib": "./tsconfig/lib.json",
+    "./prettier": "./prettier/index.json"
+  }
+}
+

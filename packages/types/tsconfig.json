@@ -1,0 +1,8 @@
+{
+  "extends": "@out-of-box-studio/config/tsconfig/lib",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
+

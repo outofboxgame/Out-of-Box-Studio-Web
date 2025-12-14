@@ -1,0 +1,22 @@
+{
+  "name": "@out-of-box-studio/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "@out-of-box-studio/config": "^0.1.0",
+    "typescript": "^5.6.3",
+    "@types/react": "^18.3.12",
+    "eslint": "^8.57.0"
+  }
+}

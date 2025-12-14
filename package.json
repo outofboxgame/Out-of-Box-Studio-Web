@@ -1,0 +1,29 @@
+{
+  "name": "out-of-box-studio",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:web": "npm -w @out-of-box-studio/web run dev",
+    "dev:admin": "npm -w @out-of-box-studio/admin run dev",
+    "dev:api": "npm -w @out-of-box-studio/api run dev",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "prettier": "@out-of-box-studio/config/prettier",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.6.3"
+  }
+}

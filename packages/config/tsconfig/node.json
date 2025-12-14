@@ -1,0 +1,10 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "module": "ES2022",
+    "outDir": "dist",
+    "noEmit": false,
+    "types": ["node"]
+  }
+}
+
