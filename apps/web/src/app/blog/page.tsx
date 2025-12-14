@@ -1,4 +1,3 @@
-'use client';
 import Section from '../../components/Section';
 import type { Metadata } from 'next';
 

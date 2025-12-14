@@ -1,4 +1,3 @@
-'use server';
 import { Button } from '@out-of-box-studio/ui';
 import { notFound } from 'next/navigation';
 import Section from '../../../components/Section';

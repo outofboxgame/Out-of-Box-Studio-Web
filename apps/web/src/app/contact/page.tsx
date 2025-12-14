@@ -1,6 +1,6 @@
 import Section from '../../components/Section';
 import type { Metadata } from 'next';
-import SocialCards from '../../components/SocialCards';
+import SocialCards from '../../components/contact/SocialCards';
 
 export const metadata: Metadata = {
   title: 'Contact — Out Of Box Studio'
