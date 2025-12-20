@@ -1,4 +1,6 @@
 import Section from '../../components/Section';
+import Landing from '../../components/Landing';
+import { readContent } from '../../lib/content';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -6,12 +8,17 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const content = readContent();
   return (
     <main>
       <div className="bg-[#0d1015]">
         <Section className="py-20 max-w-7xl">
-          <h1 className="text-3xl sm:text-4xl font-semibold text-text text-center">Blog</h1>
-          <p className="mt-4 text-text-muted text-center">Notes from the studio.</p>
+          <Landing>
+            <h1 className="text-3xl sm:text-4xl font-semibold text-text text-center">
+              {content.blog.title}
+            </h1>
+            <p className="mt-4 text-text-muted text-center">{content.blog.tagline}</p>
+          </Landing>
         </Section>
       </div>
 

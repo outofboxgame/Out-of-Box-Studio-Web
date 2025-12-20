@@ -11,6 +11,7 @@
     "dev:web": "npm -w @out-of-box-studio/web run dev",
     "dev:admin": "npm -w @out-of-box-studio/admin run dev",
     "dev:api": "npm -w @out-of-box-studio/api run dev",
+    "gen:secrets": "node scripts/generate-secrets.mjs",
     "build": "npm run build --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present"

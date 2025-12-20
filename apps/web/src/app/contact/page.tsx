@@ -1,18 +1,25 @@
 import Section from '../../components/Section';
 import type { Metadata } from 'next';
 import SocialCards from '../../components/contact/SocialCards';
+import Landing from '../../components/Landing';
+import { readContent } from '../../lib/content';
 
 export const metadata: Metadata = {
   title: 'Contact — Out Of Box Studio'
 };
 
 export default function ContactPage() {
+  const content = readContent();
   return (
     <main>
       <div className="bg-[#0d1015]">
         <Section className="py-20 max-w-7xl">
-          <h1 className="text-3xl sm:text-4xl font-semibold text-text text-center">Contact</h1>
-          <p className="mt-4 text-text-muted text-center">Let’s build something thoughtful.</p>
+          <Landing>
+            <h1 className="text-3xl sm:text-4xl font-semibold text-text text-center">
+              {content.contact.title}
+            </h1>
+            <p className="mt-4 text-text-muted text-center">{content.contact.tagline}</p>
+          </Landing>
         </Section>
       </div>
 
@@ -31,7 +38,7 @@ export default function ContactPage() {
           <div className="rounded-lg border border-white/10 bg-black/20 p-6 mx-auto max-w-3xl">
             <h2 className="text-text font-semibold">Expectations</h2>
             <p className="mt-3 text-text-muted">
-              Small studio. Replies may take time. Messages are read with care.
+              {content.contact.expectations}
             </p>
           </div>
         </Section>

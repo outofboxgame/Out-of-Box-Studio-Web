@@ -14,7 +14,8 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "@out-of-box-studio/ui": "^0.1.0",
-    "@out-of-box-studio/types": "^0.1.0"
+    "@out-of-box-studio/types": "^0.1.0",
+    "clsx": "^2.1.1"
   },
   "devDependencies": {
     "@out-of-box-studio/config": "^0.1.0",
@@ -29,3 +30,4 @@
     "autoprefixer": "^10.4.20"
   }
 }
+

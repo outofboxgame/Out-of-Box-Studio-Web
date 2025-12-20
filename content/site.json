@@ -1,0 +1,91 @@
+{
+  "about": {
+    "title": "About the Studio",
+    "subtitle": "Small teams. Thoughtful games. Long-term craft.",
+    "philosophy": [
+      "We approach development with an indie mindset—scope honestly, respect time, and shape experiences that reward attention.",
+      "Learning happens through building. Each prototype refines the feel, the rhythm, and the clarity of play.",
+      "Craft over hype. Mood, pacing, and interaction matter. The goal is memorable moments, not noise—small games with meaning."
+    ],
+    "howWeWork": [
+      { "title": "Unity + C#", "text": "Practical engine familiarity and hands-on craft." },
+      { "title": "Iterative prototyping", "text": "Find the feel by building, not by hypothesizing." },
+      { "title": "Player-first design", "text": "Clarity, respect, and moments worth remembering." },
+      { "title": "Sustainable solo dev", "text": "Long-term pace, steady habits, thoughtful scope." }
+    ]
+  },
+  "story": {
+    "items": [
+      { "title": "How It Started", "points": ["Solo developer", "Curiosity-driven beginnings"] },
+      { "title": "Why We Make Games", "points": ["Creativity", "Player-first mindset", "Experimental ideas"] },
+      { "title": "Our Vision", "points": ["Memorable experiences", "Small games with big ideas"] }
+    ]
+  },
+  "founder": {
+    "bio": [
+      "Solo indie developer focused on small, thoughtful experiences.",
+      "Unity and C# roots, patient iteration, and a preference for tangible craft.",
+      "Learn by building, finish what you start, and let the work speak calmly."
+    ],
+    "timeline": [
+      "Started learning game development",
+      "First prototype",
+      "First released game",
+      "Current goals"
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "tagline": "Notes from the studio."
+  },
+  "contact": {
+    "title": "Contact",
+    "tagline": "Let’s build something thoughtful.",
+    "expectations": "Small studio. Replies may take time. Messages are read with care."
+  },
+  "games": {
+    "list": [
+      { "title": "Starfall Echoes", "slug": "starfall-echoes", "hook": "A quiet journey through collapsing constellations.", "accent": "indigo" },
+      { "title": "Glassbound", "slug": "glassbound", "hook": "Fragile worlds, resilient choices, shimmering paths.", "accent": "blue" },
+      { "title": "Tide of Ciphers", "slug": "tide-of-ciphers", "hook": "Decode the shoreline; the ocean remembers everything.", "accent": "cyan" }
+    ],
+    "details": {
+      "starfall-echoes": {
+        "title": "Starfall Echoes",
+        "tagline": "A quiet journey through collapsing constellations.",
+        "description": "Traverse fading skies where constellations whisper the last notes of their stories. Starfall Echoes blends meditative exploration with subtle puzzle rhythms—guiding fragments of light to reconcile drifting worlds.",
+        "trailerGradient": "linear-gradient(135deg, rgba(147,197,253,0.2) 0%, rgba(59,130,246,0.25) 50%, rgba(6,182,212,0.2) 100%)",
+        "screenshots": [
+          "linear-gradient(135deg, rgba(59,130,246,0.25), rgba(147,197,253,0.2))",
+          "linear-gradient(135deg, rgba(6,182,212,0.25), rgba(125,211,252,0.2))",
+          "linear-gradient(135deg, rgba(99,102,241,0.25), rgba(165,180,252,0.2))",
+          "linear-gradient(135deg, rgba(14,165,233,0.25), rgba(147,197,253,0.2))"
+        ]
+      },
+      "glassbound": {
+        "title": "Glassbound",
+        "tagline": "Fragile worlds, resilient choices, shimmering paths.",
+        "description": "A reflective journey through delicate spaces—where each step leaves a trail and each decision refracts into new possibilities. Minimal mechanics, maximal mood.",
+        "trailerGradient": "linear-gradient(135deg, rgba(99,102,241,0.22) 0%, rgba(79,70,229,0.25) 50%, rgba(165,180,252,0.2) 100%)",
+        "screenshots": [
+          "linear-gradient(135deg, rgba(99,102,241,0.25), rgba(165,180,252,0.2))",
+          "linear-gradient(135deg, rgba(79,70,229,0.25), rgba(147,197,253,0.18))",
+          "linear-gradient(135deg, rgba(147,197,253,0.22), rgba(99,102,241,0.2))"
+        ]
+      },
+      "tide-of-ciphers": {
+        "title": "Tide of Ciphers",
+        "tagline": "Decode the shoreline; the ocean remembers everything.",
+        "description": "A slow coast along encrypted horizons. Rewards curiosity and patience, letting meaning surface in fragments before the bigger shape becomes clear.",
+        "trailerGradient": "linear-gradient(135deg, rgba(6,182,212,0.22) 0%, rgba(34,211,238,0.25) 50%, rgba(125,211,252,0.2) 100%)",
+        "screenshots": [
+          "linear-gradient(135deg, rgba(6,182,212,0.25), rgba(34,211,238,0.2))",
+          "linear-gradient(135deg, rgba(125,211,252,0.25), rgba(147,197,253,0.2))",
+          "linear-gradient(135deg, rgba(14,165,233,0.22), rgba(6,182,212,0.2))",
+          "linear-gradient(135deg, rgba(59,130,246,0.22), rgba(99,102,241,0.18))"
+        ]
+      }
+    }
+  }
+}
+
